@@ -1,0 +1,2 @@
+1.http://www.neotokio.it/#/的最后一项地图功能，是否可以用在馆内参观；虽然是滚动视差，但是一直有导航在页面跟进。是否考虑在页面右侧留导航。
+2.http://www.awwwards.com/web-design-awards/a-journey-through-middle-earth分享的感觉做成中间那种。
