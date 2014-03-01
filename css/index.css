@@ -131,8 +131,11 @@ p {
 /* SECTIONS */
 .sTop {
 	min-height: 630px;
-	background: #DC143C;
-	color: #FFFFFF;
+	background: #FFFFFF;
+	background-image: url('../images/dragon.jpg');
+	background-position: 50%;
+	background-repeat: no-repeat;
+	color: #000000;
 	
 }
 
