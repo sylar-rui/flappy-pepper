@@ -1,0 +1,120 @@
+/* Primary menu 
+-------------------------------------------------------------- */
+#menu-primary {
+	font-size: 1em;
+	z-index: 99;
+	float:left;
+	margin-left:190px;
+}
+#menu-primary li {
+	display: block;
+	float: left;
+	min-height: 30px;
+	background: url(images/menu-separator.png) no-repeat left center;
+}
+#menu-primary li:first-child {
+	padding-left: 0;
+	background: none;
+}
+#menu-primary li a {
+	font-family: 'Î¢ÈíÑÅºÚ', 'Helvetica Neue', Helvetica, Arial, sans-serif!important;
+	font-size: 1.2em;
+	font-weight: 400;
+	display: block;
+	text-transform: lowercase;
+	line-height:57px;
+	height:57px;
+	padding:0 20px;
+	color:#fff;
+}
+#menu-primary li.current-menu-item{color:#fff;background:url(images/sdc_icon.png) repeat-x left -272px;}
+#menu-primary li li, #menu-primary li li.current-menu-item li {
+	clear: both;
+	float: none;
+	border-top: 1px solid #ddd;
+	padding-left: 0;
+	background: none;
+}
+#menu-primary li li:first-child, #menu-primary li li.current-menu-item li:first-child { border-top: none; }
+#menu-primary li li a, #menu-primary li li.current-menu-item li a {
+	font-size: 1.166666666666667em; /* 14 / 12 = 1.166666666666667 */
+	text-transform: none;
+	color: #fff;
+	padding: 12px 15px;
+}
+#menu-primary ul li a:hover, #menu-primary li ul li a:hover {
+	color: #fff;
+	border-bottom: none;
+	background:#339dd2;
+}
+
+/* Dropdowns
+-------------------------------------------------------------- */
+.menu{
+	position:relative;
+}
+.menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.menu li:hover { visibility: inherit }
+.menu li {
+	float: left;
+	position: relative;
+}
+.menu a {
+	display: block;
+	position: relative;
+}
+#menu-primary li ul {
+	display: none;
+	position: absolute;
+	top: 25px;
+	left: 0;
+	border: 1px solid #ddd;
+	border-top: none;
+	background: #fff;
+	z-index: 100;
+}
+#menu-primary li:first-child ul { left: -20px; }
+#menu-primary li:hover ul, #menu-primary li.sfHover ul { display: block; }
+#menu-primary li:hover li ul, #menu-primary li.sfHover li ul { top: -999em; }
+#menu-primary li li:hover ul, #menu-primary li li.sfHover ul {
+	top: -1px;
+	left: 100%;
+	margin-left: 0;
+	border-top: 1px solid #e5e5e5;
+}
+.sf-sub-indicator {
+	text-indent: -9999em;
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	background: url(images/dropdown.png) no-repeat right 40%;
+	position: absolute;
+	top: 25%;
+	right: 0;
+}
+.menu li li .sf-sub-indicator {
+	top: 37%;
+	background: url(images/dropright.png) no-repeat right 50%;
+	margin-right: 7px;
+}
+.menu li a.sf-with-ul { padding-right: 16px; }
+
+#menu-primary {
+		width: 100%;
+		clear: both;
+		margin-top: 90px;
+		margin-bottom:35px;
+		margin-left: 35px;
+	}
+	#menu-primary .menu { width:80%;}
+	#menu-primary ul li {
+		width:100%;
+		clear: left;
+		padding-left: 0;
+		background:#222;
+	}
+	#menu-primary ul li a { margin-left: 0; }
