@@ -1,10 +1,15 @@
-* {margin: 0; padding: 0; outline: 0;}
+* {
+	margin: 0; 
+	padding: 0; 
+	outline: 0;
+}
 
 body {
 	font-family: "Microsoft Yahei", "Comic Sans MS", cursive, Helvetica, Arial, Verdana, sans-serif;
 	color: #999;
 	font-size: 12px;
-	background: #CC1313;
+	background: #979090;
+
 	
 }
 
@@ -26,7 +31,6 @@ h1.title {
 	font-weight: 700;
 	color: #6a6a6a;
 
-
 }
 
 #nav {
@@ -35,44 +39,44 @@ h1.title {
   	margin:20px auto 0; /*让元素在页面居中*/
 }
 #nav li {
-  width: 150px;
-  height: 35px;
-  float: left;
-  margin:0 2px;
-  position:relative; /*li标签相对定位*/
-  text-align:center;
-  z-index:5;
-  display:inline;
+	width: 150px;
+	height: 35px;
+	float: left;
+	margin:0 2px;
+	position:relative; /*li标签相对定位*/
+	text-align:center;
+	z-index:5;
+	display:inline;
 }
 #nav li span {
-  color:#FFFF80;
-  width:150px;
-  letter-spacing: 1px;
-  background: url(images/nav_bg.png) no-repeat 0 0;/*滑动背景添加到span标签中*/
-  position:absolute; /*span标签绝对定位*/
-  top:10; left:0;
-  z-index:10;/*span标签要在a标签的下面，所以层叠顺序要小于a标签的层叠顺序*/
-  font-size:18px;
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-weight: bold;
-  text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
-  height:60px;
-  padding-top:30px;
-  display:none;/*在默认状态下span标签是隐藏的*/
+	color:#FFFF80;
+	width:150px;
+	letter-spacing: 1px;
+	background: url(images/nav_bg.png) no-repeat 0 0;/*滑动背景添加到span标签中*/
+	position:absolute; /*span标签绝对定位*/
+	top:10; left:0;
+	z-index:10;/*span标签要在a标签的下面，所以层叠顺序要小于a标签的层叠顺序*/
+	font-size:18px;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: bold;
+	text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
+	height:60px;
+	padding-top:30px;
+	display:none;/*在默认状态下span标签是隐藏的*/
 }
 #nav li a {
-  color:rgba(38, 38, 38, 0.7);
-  font-size:20px;
-  font-style: bold;
-  letter-spacing:0.5px;
-  width:150px;
-  display:block;
-  position:absolute;/*a标签也同样需要绝对定位*/
-  top:0; left:0;
-  z-index:20;/*但是a标签的层叠顺序应该是大于span标签的，这样才能确保a标签不被span标签遮盖住*/
-  height:35px;
-  padding-top:55px;
-  text-decoration:none;
+	color:rgba(38, 38, 38, 0.7);
+	font-size:20px;
+	font-style: bold;
+	letter-spacing:0.5px;
+	width:150px;
+	display:block;
+	position:absolute;/*a标签也同样需要绝对定位*/
+	top:0; left:0;
+	z-index:20;/*但是a标签的层叠顺序应该是大于span标签的，这样才能确保a标签不被span标签遮盖住*/
+	height:35px;
+	padding-top:55px;
+	text-decoration:none;
 }
 
 h2 {
@@ -181,7 +185,7 @@ p {
 	min-height: 630px;
 	background: #FFFFFF;
 	background-image: url('../images/dragon0.png');
-	background-size: 80%;
+	background-size: 70%;
 	background-position: 50%;
 	background-repeat: no-repeat;
 	color: #000000;
@@ -198,7 +202,7 @@ p {
 
 .s2 {
 	min-height: 500px;
-	background: #3f3f3f;
+	background: #fff;
 }
 
 
@@ -218,5 +222,42 @@ p {
 	min-height: 500px;
 	background: #293b4d;
 	color: white;
+}
+
+
+.returnTop {
+    position: fixed;
+    _position: absolute;
+    right: 10px;
+    bottom: 200px;
+    _bottom: auto;
+    display: none;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #61b72e;
+    border-radius:4px;
+    background: #fff;
+    box-shadow: 0 0 5px #F5F5F5;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+.returnTop .s {
+    position: absolute;
+    top: -2px;
+    _top: -20px;
+    left: 10px;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-color: transparent transparent #61b72e;
+    border-style: dashed dashed solid;
+}
+.returnTop .b {
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    height: 12px;
+    width: 8px;
+    background: #61b72e;
 }
 
