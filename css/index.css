@@ -95,8 +95,9 @@ p {
 	width: 100%;
 	max-width: 1140px;
 	min-width: 960px;
-	background: #524D76;
-	color: #FFFFFF;
+	background: rgba(38, 38, 38, 0.7);
+	color: rgb(215, 215, 215);
+	width: 100%;
 }
 
 .Menu .inner {
@@ -119,18 +120,6 @@ p {
 	border-radius: 10px;
 }
 
-.menuBtn {
-
-	background: center center no-repeat transparent;
-	background: #000;
-	display: block;
-	width: 40px;
-	height: 40px;
-	position: absolute;
-	top: 0;
-	left: 10px;
-
-}
 .end {
 	margin: 0;
 }
@@ -151,7 +140,7 @@ p {
 
 .s1 {
 	min-height: 500px;
-	background: #2e2e2e;
+	background: #FFF url('../images/bg-tile.png');
 }
 
 
