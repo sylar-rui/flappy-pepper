@@ -1,7 +1,7 @@
 * {margin: 0; padding: 0; outline: 0;}
 
 body {
-	font-family: "Comic Sans MS", cursive, Helvetica, Arial, Verdana, sans-serif;
+	font-family: "Microsoft Yahei", "Comic Sans MS", cursive, Helvetica, Arial, Verdana, sans-serif;
 	color: #999;
 	font-size: 12px;
 	background: #CC1313;
@@ -9,7 +9,7 @@ body {
 }
 
 h1, h2 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Microsoft Yahei", "Comic Sans MS", cursive, Helvetica, Arial, Verdana, sans-serif;
 	font-weight: 300;
 	margin:0 0 15px 0;
 }
@@ -29,6 +29,51 @@ h1.title {
 
 }
 
+#nav {
+	max-width: 1140px;
+  	min-width: 960px;
+  	margin:20px auto 0; /*让元素在页面居中*/
+}
+#nav li {
+  width: 150px;
+  height: 35px;
+  float: left;
+  margin:0 2px;
+  position:relative; /*li标签相对定位*/
+  text-align:center;
+  z-index:5;
+  display:inline;
+}
+#nav li span {
+  color:#FFFF80;
+  width:150px;
+  letter-spacing: 1px;
+  background: url(images/nav_bg.png) no-repeat 0 0;/*滑动背景添加到span标签中*/
+  position:absolute; /*span标签绝对定位*/
+  top:10; left:0;
+  z-index:10;/*span标签要在a标签的下面，所以层叠顺序要小于a标签的层叠顺序*/
+  font-size:18px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: bold;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
+  height:60px;
+  padding-top:30px;
+  display:none;/*在默认状态下span标签是隐藏的*/
+}
+#nav li a {
+  color:rgba(38, 38, 38, 0.7);
+  font-size:20px;
+  font-style: bold;
+  letter-spacing:0.5px;
+  width:150px;
+  display:block;
+  position:absolute;/*a标签也同样需要绝对定位*/
+  top:0; left:0;
+  z-index:20;/*但是a标签的层叠顺序应该是大于span标签的，这样才能确保a标签不被span标签遮盖住*/
+  height:35px;
+  padding-top:55px;
+  text-decoration:none;
+}
 
 h2 {
 	font-size: 24px;
@@ -41,10 +86,17 @@ p {
 
 
 .active {
-	background: #7C8997;
+	display: block;
+	width: 88px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	transition: 0.40s ease-out;
+	background: #CC1313 url(images/light.png);
 	color: #4EBCBD; 
-	filter:alpha(opacity=70); 
-	opacity:0.7;
+	filter:alpha(opacity=40); 
+	opacity:0.4;
 }
 .wrap {
 		/*background:url(../images/bg.png) top left repeat-x;*/
@@ -80,7 +132,7 @@ p {
 	min-height: 50px;
 	padding:30px 0;
 	font-size: 18px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Microsoft Yahei", "Comic Sans MS", cursive, Helvetica, Arial, Verdana, sans-serif;
 	font-weight: 300;
 	padding:30px 0;
 　　border-radius: 15px;
@@ -89,13 +141,12 @@ p {
 
 .Menu {
 	position: absolute;
-	top: 600px;
-	height: 50px;
+	height: 0;
 	z-index: 1000;
 	width: 100%;
 	max-width: 1140px;
 	min-width: 960px;
-	background: rgba(38, 38, 38, 0.7);
+	background: rgba(175, 55, 55, 0.7);
 	color: rgb(215, 215, 215);
 	width: 100%;
 }
@@ -129,7 +180,8 @@ p {
 .sTop {
 	min-height: 630px;
 	background: #FFFFFF;
-	background-image: url('../images/dragon.jpg');
+	background-image: url('../images/dragon0.png');
+	background-size: 80%;
 	background-position: 50%;
 	background-repeat: no-repeat;
 	color: #000000;
