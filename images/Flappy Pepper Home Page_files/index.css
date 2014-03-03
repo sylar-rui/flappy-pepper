@@ -43,7 +43,7 @@ h1.title {
 	height: 35px;
 	float: left;
 	margin:0 2px;
-	position:relative; 
+	position:relative; /*li标签相对定位*/
 	text-align:center;
 	z-index:5;
 	display:inline;
@@ -52,17 +52,17 @@ h1.title {
 	color:#FFFF80;
 	width:150px;
 	letter-spacing: 1px;
-	background: url(images/nav_bg.png) no-repeat 0 0;
-	position:absolute;
+	background: url(images/nav_bg.png) no-repeat 0 0;/*滑动背景添加到span标签中*/
+	position:absolute; /*span标签绝对定位*/
 	top:10; left:0;
-	z-index:10;
+	z-index:10;/*span标签要在a标签的下面，所以层叠顺序要小于a标签的层叠顺序*/
 	font-size:18px;
 	font-family: 'PT Sans Narrow', sans-serif;
 	font-weight: bold;
 	text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
 	height:60px;
 	padding-top:30px;
-	display:none;
+	display:none;/*在默认状态下span标签是隐藏的*/
 }
 #nav li a {
 	color:rgba(38, 38, 38, 0.7);
@@ -71,9 +71,10 @@ h1.title {
 	letter-spacing:0.5px;
 	width:150px;
 	display:block;
-	position:absolute;】
+	position:absolute;/*a标签也同样需要绝对定位*/
 	top:0; left:0;
-	z-index:20;
+	z-index:20;/*但是a标签的层叠顺序应该是大于span标签的，这样才能确保a标签不被span标签遮盖住*/
+	height:35px;
 	padding-top:55px;
 	text-decoration:none;
 }
@@ -102,6 +103,7 @@ p {
 	opacity:0.4;
 }
 .wrap {
+		/*background:url(../images/bg.png) top left repeat-x;*/
 		width: 100%;
 		max-width: 1140px;
 		min-width: 960px;
@@ -142,7 +144,6 @@ p {
 
 
 .Menu {
-	top: 500px;
 	position: absolute;
 	height: 0;
 	z-index: 1000;
@@ -258,4 +259,15 @@ p {
     height: 12px;
     width: 8px;
     background: #61b72e;
+}
+
+.leaves{
+	font-family: "Microsoft Yahei", "Comic Sans MS", cursive, Helvetica, Arial, Verdana, sans-serif;
+	color: #999;
+	font-size: 12px;
+	background: #979090;
+	z-index: 100;
+	width: 100%;
+	max-width: 1140px;
+	min-width: 960px;
 }
