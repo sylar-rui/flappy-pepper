@@ -17,3 +17,8 @@ hahahahhahaha
 新增：导航栏 － Mar 1st
 新增：四个div模块 － Mar 1st
 新增：首页背景图 － Mar 1st
+新增：剪纸飘落效果 - Mar 2nd
+新增：jquery插件jquery.curtain.js - Mar 2nd
+新增：jquery插件jquery.classyleaves.js - Mar 2nd
+新增：css样式jquery.classyleaces.css - Mar 2nd
+新增：导航栏标题 - Mar 2nd
