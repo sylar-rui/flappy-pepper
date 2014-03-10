@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	var random_bg = Math.floor(Math.random() * 11 + 1);
+	var random_bg = Math.floor(Math.random() * 12 + 1);
 	var bg = 'url(images/bg/bg' + random_bg + '.jpg)';
 	$("body").css("background-image", bg);
 });
