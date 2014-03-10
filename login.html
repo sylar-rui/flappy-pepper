@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <meta name='robots' content='noindex,nofollow'/>
+            <title>Login.html</title>
+            <link rel="stylesheet" href="css/bootstrap.min.css"/>
+            <link rel="stylesheet" href="css/bootstrap-responsive.min.css"/>
+            <link href="font-awesome/css/font-awesome.css" rel="stylesheet"/>
+            <link rel="stylesheet" href="css/haveme-login.css"/>
+      </head>
+      <body>
+            <div id="loginbox">
+                  <div class="haveme-form"> 
+                        <div class="lostpasswordform">
+                              <h1 class="control-group h2_text"><a href="#" title="忘记密码">忘记密码</a></h1>
+                              <p class="message control-group normal_text">请输入您的用户名或电子邮件地址重置密码！</p>
+                              <form name="lostpasswordform" id="lostpasswordform" class="top-margin-30" action="" method="post">
+                                    <div class="control-group">
+                                          <div class="controls">
+                                                <div class="main_input_box"> <span class="add-on bg_lo"><i class="icon-envelope"></i></span>
+                                                      <input type="text" name="user" id="user"/>
+                                                      </label>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="form-actions">
+                                          <span class="pull-right submit">
+                                          <input type="submit" name="submit" class="btn btn-success" value="获取新密码" />
+                                          </span> </div>
+                              </form>
+                              <a class="lostpassword_close"></a> </div><!--/lostpasswordform-->
+                        <!--/忘记密码--> 
+                        <!--注册会员-->
+                        <div class="registerform">
+                              <h1 class="control-group h2_text"><a href="#" title="会员注册">会员注册</a></h1>
+                              <form name="registerform" id="loginform" class="top-margin-30" action="" method="post">
+                                    <div class="control-group">
+                                          <div class="controls">
+                                                <div class="main_input_box"> <span class="add-on bg_lg"><i class="icon-user"></i></span>
+                                                      <input type="text" name="name" id="name" placeholder="用户名，支持中文注册"/>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="control-group">
+                                          <div class="controls">
+                                                <div class="main_input_box"> <span class="add-on bg_lo"><i class="icon-envelope"></i></span>
+                                                      <input type="text" name="email" id="email" placeholder="你的电子邮件" onblur="ischeckemail()" />
+                                                      <span id="emailmsg"></span> </div>
+                                          </div>
+                                    </div>
+                                    <div class="control-group">
+                                          <div class="controls">
+                                                <div class="main_input_box"> <span class="add-on bg_lo"><i class="icon-lock"></i></span>
+                                                      <input type="password" name="pwd" id="pwd" placeholder="输入您的密码"/>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="control-group">
+                                          <div class="controls">
+                                                <div class="main_input_box"> <span class="add-on bg_lo"><i class="icon-lock"></i></span>
+                                                      <input type="password" name="pwd_check" id="pwd_check" onblur="ischeckepwd()" placeholder="重复您的密码"/>
+                                                      <span id="pwdmsg"></span> </div>
+                                          </div>
+                                    </div>
+                                    <p id="reg_passmail" class="control-group normal_text">填写一些基本信息即可注册.</p>
+                                    <div class="form-actions"> <span class="pull-right submit">
+                                          <input type="submit" name="submit" id="submit" class="btn btn-success" value="注册" />
+                                          </span> </div>
+                              </form>
+                              <a class="register_close"></a> </div><!--/registerform-->
+                        <!--/注册会员--> 
+                        <!--会员登录-->
+                        <div class="userloginform">
+                        <h1 class="control-group h2_text"><a href="#" title="会员登录">会员登录</a></h1>
+                        <form name="loginform" id="loginform" class="top-margin-30" action="" method="post">
+                              <div class="control-group">
+                                    <div class="controls">
+                                          <div class="main_input_box"> <span class="add-on bg_lg"><i class="icon-user"></i></span>
+                                                <input type="text" name="name" id="name" placeholder="请输入用户名"/>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="control-group">
+                                    <div class="controls">
+                                          <div class="main_input_box"> <span class="add-on bg_ly"><i class="icon-lock"></i></span>
+                                                <input type="password" name="pwd" id="pwd" placeholder="请输入密码"/>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="form-actions"> <span class="pull-left forgetmenot">
+                                    <label for="rememberme">
+                                          <input name="rememberme" type="checkbox" id="rememberme" value="forever"  />
+                                          记住我的登录信息</label>
+                                    </span> <span class="pull-right submit">
+                                    <input type="submit" name="wp-submit" id="wp-submit" class=" btn btn-success" value="登录" />
+                                    </span> </div>
+                        </form>
+                        <div id="nav"> <a class="btn btn-info register_display">注册</a> <a class="btn btn-info lostpassword_display" title="找回密码">忘记密码？</a> </div>
+                        </div>
+                  </div>
+            </div>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/user-login.js"></script>
+      </body>
+</html>
