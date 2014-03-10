@@ -194,20 +194,29 @@ p {
 
 
 .s1 {
-	min-height: 500px;
-	background: #FFF url('../images/bg-tile.png');
+	min-height: 800px;
+	background: #FFF url('../images/tengami-konzept-artwork-3.jpg');
+	background-position: 50%;
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
 
 .s2 {
 	min-height: 500px;
-	background: #fff;
+	background: #fff url('../images/home_sprite_frei.png');
+	background-size: 40%;
+	background-position: 50%;
+	background-repeat: no-repeat;
 }
 
 
 .s3 {
-	min-height: 500px;
-	background: #504f4f;
+	min-height: 650px;
+	background: #504f4f url('../images/wallpaper-1622683.jpg');
+	background-size: 100%;
+	background-position: 50%;
+	background-repeat: no-repeat;
 }
 
 
