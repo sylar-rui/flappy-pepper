@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/learn.css"/>
+<link href="skin/jplayer.pink.flag.css" rel="stylesheet" type="text/css" /><script type="text/javascript"></script>
+<script type="text/javascript" 	src="js/jquery-2.0.3.min.js"></script>
+<script src=js/jquery.jplayer.min></script>
+<body>
+<div class="title">
+<div class="Menu">
+ <div class="inner">
+        <ul id ="nav">
+          <li><span>HOME</span><a href="#"  class="subNavBtn">首页</a></li>
+          <li><span>TRADITION</span><a href="#" id="s1" class="subNavBtn">剪纸·传统之美</a></li>
+          <li><span>EXHIBITION</span><a href="#" id="s2" class="subNavBtn">剪纸·赏</a></li>
+          <li><span>LEARN</span><a href="#" id="s3" class="subNavBtn">剪纸·学</a></li>
+          <li><span>SITE</span><a href="#" id="s4" class="subNavBtn">剪纸·空间</a></li>
+          <li><span>MORE</span><a href="#" id="s5" class="subNavBtn">剪纸·更多</a></li>
+        </ul>
+ 			</div>
+ 		</div>
+<script type="text/javascript">
+ $(document).ready(function(){
+  $("#jquery_jplayer_1").jPlayer({
+   ready: function () {
+    $(this).jPlayer("setMedia", 
+{
+     m4a: "/media/mysound.mp4",
+     oga: "/media/mysound.ogg",
+poster:""
+    }).jplayer("play");
+  } ended: function() { // The $.jPlayer.event.ended 事件
+    $(this).jPlayer("play"); //重复播放媒体
+  },swfPath: "/js",
+   supplied: "m4a, oga");
+ );$("#jumpToTime").click( function() {
+  $("#jpId").jPlayer("play", 42); // 从媒体的42秒处开始播放.
+});
+</script>
+<div id="jquery_jplayer_1"></div>
+<div id="jp_container_1">
+ <a href="#" class="jp-play">Play</a>
+ <a href="#" class="jp-pause">Pause</a>
+</div>
+</body></html>
