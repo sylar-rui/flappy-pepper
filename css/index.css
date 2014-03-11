@@ -8,12 +8,6 @@
 	font-family: specialFont;
 	src: url("../fonts/bobsmade_font_by_Bobsmade.ttf");
 }
-.SpecialFont{
-	font-family: specialFont;
-	font-size: 3.2em;
-	letter-spacing: 1px;
-	text-align: center;
-}
 @font-face {
 	font-family: fangzhengPaper;
 	src: url("../fonts/fangzhengpaper.ttf");
