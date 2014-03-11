@@ -4,8 +4,29 @@
 	outline: 0;
 }
 
+@font-face {
+	font-family: specialFont;
+	src: url("../fonts/bobsmade_font_by_Bobsmade.ttf");
+}
+.SpecialFont{
+	font-family: specialFont;
+	font-size: 3.2em;
+	letter-spacing: 1px;
+	text-align: center;
+}
+@font-face {
+	font-family: fangzhengPaper;
+	src: url("../fonts/fangzhengpaper.ttf");
+}
+.PaperFont{
+	font-family: fangzhengPaper;
+	font-size: 3.2em;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
 body {
-	font-family: "Microsoft Yahei", "Comic Sans MS", cursive, Helvetica, Arial, Verdana, sans-serif;
+	font-family: "Corbel","Microsoft Yahei", "Comic Sans MS", cursive, Helvetica, Arial, Verdana, sans-serif;
 	color: #999;
 	font-size: 12px;
 	background: #979090;
@@ -14,7 +35,7 @@ body {
 }
 
 h1, h2 {
-	font-family: "Microsoft Yahei", "Comic Sans MS", cursive, Helvetica, Arial, Verdana, sans-serif;
+	font-family: "Corbel","Microsoft Yahei", "Comic Sans MS", cursive, Helvetica, Arial, Verdana, sans-serif;
 	font-weight: 300;
 	margin:0 0 15px 0;
 }
@@ -36,7 +57,7 @@ h1.title {
 #nav {
 	max-width: 1140px;
   	min-width: 960px;
-  	margin:20px auto 0; /*让元素在页面居中*/
+  	margin: 0; /*让元素在页面居中*/
 }
 #nav li {
 	width: 150px;
@@ -96,7 +117,7 @@ p {
 	top: 0;
 	z-index: -1;
 	transition: 0.40s ease-out;
-	background: #CC1313 url(images/light.png);
+	background: #CC1313;
 	color: #4169e1	; 
 	filter:alpha(opacity=40); 
 	opacity:0.4;
@@ -133,13 +154,33 @@ p {
 	position: relative;
 	min-height: 50px;
 	padding:30px 0;
-	font-size: 18px;
-	font-family: "Microsoft Yahei", "Comic Sans MS", cursive, Helvetica, Arial, Verdana, sans-serif;
+	font-size: 20px;
+	font-family: "Corbel","Microsoft Yahei", "Comic Sans MS", cursive, Helvetica, Arial, Verdana, sans-serif;
 	font-weight: 300;
 	padding:30px 0;
 　　border-radius: 15px;
 }
 
+.inner h2{
+	font-family: fangzhengpaper;
+	text-align:center;
+	color: rgba(255, 0, 0, 0.6);
+	font-size: 80px;
+	font-weight: bolder;
+	letter-spacing: 15px;
+	 text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
 
 .Menu {
 	top: 500px;
@@ -166,7 +207,7 @@ p {
 	float: left;
 	margin: 0px 0px 0 0;
 	text-decoration: none;
-	font-size: 14px;
+	font-size: 20px;
 	padding: 15px 2% 0 2%;
 	text-align: center;
 	color: #FFFFFF;
@@ -181,16 +222,15 @@ p {
 
 /* SECTIONS */
 .sTop {
-	min-height: 630px;
+	min-height: 600px;
 	background: #f0f8ff;
-	background-image: url('../images/dragon0.png');
-	background-size: 70%;
+	background-image: url('../images/bg000.jpg');
+	background-size: 100%;
 	background-position: 50%;
-	background-repeat: no-repeat;
+	background-repeat: repeat-x;
 	color: #000000;
-	
+	align: center;
 }
-
 
 
 .s1 {
@@ -232,39 +272,17 @@ p {
 	color: white;
 }
 
-
-.returnTop {
-    position: fixed;
-    _position: absolute;
-    right: 10px;
-    bottom: 200px;
-    _bottom: auto;
-    display: none;
-    width: 40px;
-    height: 40px;
-    border: 1px solid #61b72e;
-    border-radius:4px;
-    background: #fff;
-    box-shadow: 0 0 5px #F5F5F5;
-    text-indent: -9999px;
-    cursor: pointer;
+.one {
+	width:100%;
+	height:0px;
 }
-.returnTop .s {
-    position: absolute;
-    top: -2px;
-    _top: -20px;
-    left: 10px;
-    width: 0;
-    height: 0;
-    border-width: 10px;
-    border-color: transparent transparent #61b72e;
-    border-style: dashed dashed solid;
-}
-.returnTop .b {
-    position: absolute;
-    top: 18px;
-    left: 16px;
-    height: 12px;
-    width: 8px;
-    background: #61b72e;
+#backtotop {
+	background:url('../images/rocket_up.png') 0px 0px no-repeat;
+	position:fixed;
+	bottom:0px;
+	right:10px;
+	width:149px;
+	height:260px;
+	cursor: pointer;
+    z-index: 100;
 }
