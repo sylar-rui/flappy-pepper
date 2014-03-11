@@ -183,7 +183,7 @@ p {
 }
 
 .Menu {
-	top: 500px;
+	top: 550px;
 	position: absolute;
 	height: 0;
 	z-index: 1000;
@@ -222,7 +222,7 @@ p {
 
 /* SECTIONS */
 .sTop {
-	min-height: 600px;
+	min-height: 625px;
 	background: #f0f8ff;
 	background-image: url('../images/bg000.jpg');
 	background-size: 100%;
