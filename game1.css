@@ -2508,9 +2508,8 @@ input#enemy100{
 
 .intro{background-color:f20c00;font-size:15px;font-family:"Microsoft Yahei", "Comic Sans MS", cursive, Helvetica, Arial, Verdana, sans-serif;margin-left:100px;width:30%£»position:relative;right:30px;top:120px;}
 .intro1{
-    background:rgba(0, 0, 0, 0.3);
-    filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#4c000000', EndColorStr='#4c000000');0);
-font-color:ff2d51;background-image:url(images/gamebg.png);width:200px;height:290px;font-size:15px;font-family:"Microsoft Yahei", "Comic Sans MS", cursive, Helvetica, Arial, Verdana, sans-serif;margin-left:120px;}
+    
+font-color:ff2d51;width:200px;height:290px;font-size:15px;font-family:"Microsoft Yahei", "Comic Sans MS", cursive, Helvetica, Arial, Verdana, sans-serif;margin-left:120px;}
 
 #nav {
 	max-width: 1140px;
@@ -2600,6 +2599,6 @@ font-color:ff2d51;background-image:url(images/gamebg.png);width:200px;height:290
 	border: 2px;
 	border-radius: 10px;
 }
-.title {background-color:e9e7ef;color:383b3d;font-size:40px;width:30%;margin-top:20px;font-family:"Microsoft Yahei",Stence Std;}
-.contact{background-color:726a6b;font-size:15px;font-family:"Microsoft Yahei",Stence Std;width:1000px;position:relative;left:120px;font-align:'center';margin-top:200px;filter:alpha(opacity=50); -moz-opacity:0.50; opacity:0.50;}
+.title {background-color:e9e7ef;color:383b3d;font-size:40px;width:30%;margin-top:20px;font-family:Stencil Std;}
+.contact{background-color:726a6b;font-size:15px;font-family:"Microsoft Yahei",StencilStd;width:1000px;position:relative;left:120px;font-align:'center';margin-top:200px;filter:alpha(opacity=50); -moz-opacity:0.50; opacity:0.50;}
 
