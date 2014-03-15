@@ -5,10 +5,11 @@ $(function(){
 		var changeColor = this;
 		this.timer = setTimeout(function(){
 		$(changeColor).css({'color':'#4169e1'});
-	},100);},function(){
+	},100);}
+    ,function(){
 		if(this.timer) clearTimeout(this.timer);
 		$(this).siblings('span').slideUp(100);
-		$(this).css({'color':'#202020'});
+		$(this).css({'color':'rgba(220,220,220 , 0.8)'});
 	});
   // 给 window 对象绑定 scroll 事件
   $(window).bind("scroll", function(){

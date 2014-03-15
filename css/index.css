@@ -20,7 +20,7 @@
 }
 
 body {
-	font-family: "Corbel","Microsoft Yahei", "Comic Sans MS", cursive, Helvetica, Arial, Verdana, sans-serif;
+	font-family: fangzhengPaper,"Corbel","Microsoft Yahei", "Comic Sans MS", cursive, Helvetica, Arial, Verdana, sans-serif;
 	color: #999;
 	font-size: 12px;
 	background: #979090;
@@ -29,14 +29,14 @@ body {
 }
 
 h1, h2 {
-	font-family: "Corbel","Microsoft Yahei", "Comic Sans MS", cursive, Helvetica, Arial, Verdana, sans-serif;
+	font-family: fangzhengPaper,"Corbel","Microsoft Yahei", "Comic Sans MS", cursive, Helvetica, Arial, Verdana, sans-serif;
 	font-weight: 300;
-	margin:0 0 15px 0;
+	margin:0 0 0 0;
 }
 
 
 h1 {
-	font-size: 36px;
+	font-size: 50px;
 	letter-spacing: -2px;
 	line-height: 100%;
 }
@@ -51,13 +51,13 @@ h1.title {
 #nav {
 	max-width: 1140px;
   	min-width: 960px;
-  	margin: 0; /*让元素在页面居中*/
+  	margin: 1px 15px; /*让元素在页面居中*/
 }
 #nav li {
-	width: 150px;
+	width: 160px;
 	height: 35px;
 	float: left;
-	margin:0 2px;
+	margin:2 5px;
 	position:relative; 
 	text-align:center;
 	z-index:5;
@@ -65,13 +65,13 @@ h1.title {
 }
 #nav li span {
 	color:#FFFF80;
-	width:150px;
+	width:160px;
 	letter-spacing: 1px;
 	background: url(images/nav_bg.png) no-repeat 0 0;
 	position:absolute;
 	top:10; left:0;
 	z-index:10;
-	font-size:18px;
+	font-size:20px;
 	font-family: 'PT Sans Narrow', sans-serif;
 	font-weight: bold;
 	text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
@@ -80,9 +80,9 @@ h1.title {
 	display:none;
 }
 #nav li a {
-	color:rgba(38, 38, 38, 0.7);
+	color:rgba(220, 220, 220, 0.8);
 	font-size:20px;
-	font-style: bold;
+	font-style: bolder;
 	letter-spacing:0.5px;
 	width:150px;
 	display:block;
@@ -112,7 +112,7 @@ p {
 	z-index: -1;
 	transition: 0.40s ease-out;
 	background: #CC1313;
-	color: #4169e1	; 
+	color: #4169e1; 
 	filter:alpha(opacity=40); 
 	opacity:0.4;
 }
@@ -235,48 +235,64 @@ p {
 	background-repeat: no-repeat;
 }
 
+.s1 h1{
+	text-align: left;
+	text-shadow: 1px 1px 3px rgba(50, 50, 50, 0.15);
+	color: rgba(65,105,225,0.85);
+}
+
 
 .s2 {
-	min-height: 500px;
-	background: #fff url('../images/home_sprite_frei.png');
-	background-size: 40%;
+	min-height: 800px;
+	background: #fff url('../images/wallpaper-594598.jpg');
+	background-size: 100%;
 	background-position: 50%;
 	background-repeat: no-repeat;
+	text-align: left;
+	color: rgba(218,178,115,0.8);
 }
 
 
 .s3 {
-	min-height: 650px;
+	min-height: 800px;
 	background: #504f4f url('../images/wallpaper-1622683.jpg');
-	background-size: 100%;
+	background-size: 120%;
 	background-position: 50%;
 	background-repeat: no-repeat;
 }
 
+.s3 h1{
+	color: #FF6EC7;
+	opacity: 0.8;
+}
 
 .s4 {
-	min-height: 500px;
-	background: #6e87a1;
-	color: white;
+	min-height: 800px;
+	background:url('../images/bg/bg1.jpg');
+	background-size: 130%;
+	background-position: 50%;
+	background-repeat: no-repeat;
+}
+
+.s4 h1{
+	 color: #FF7F00;
+	 opacity: 0.9;
 }
 
 .s5 {
-	min-height: 500px;
-	background: #293b4d;
+	min-height: 650px;
+	background:url('../images/wallpaper-2046669.jpg');
+	background-size: 100%;
+	background-position: 50%;
+	background-repeat: no-repeat;
 	color: white;
+}
+
+.s5 h1{
+	color: #6B4226;
 }
 
 .one {
 	width:100%;
 	height:0px;
-}
-#backtotop {
-	background:url('../images/rocket_up.png') 0px 0px no-repeat;
-	position:fixed;
-	bottom:0px;
-	right:10px;
-	width:149px;
-	height:260px;
-	cursor: pointer;
-    z-index: 100;
 }
