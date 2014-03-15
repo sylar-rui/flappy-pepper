@@ -9,7 +9,7 @@ $(function(){
     ,function(){
 		if(this.timer) clearTimeout(this.timer);
 		$(this).siblings('span').slideUp(100);
-		$(this).css({'color':'rgba(220,220,220 , 0.8)'});
+		$(this).css({'color':'#8E2323'});
 	});
   // 给 window 对象绑定 scroll 事件
   $(window).bind("scroll", function(){
