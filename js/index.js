@@ -1,14 +1,14 @@
-$(function(){
+﻿$(function(){
 	$('.Menu').smint();
 	$('#nav li').children('a').hover(function(){
-		$(this).siblings('span').slideDown(100);
+		$(this).siblings('a').slideDown(100);
 		var changeColor = this;
 		this.timer = setTimeout(function(){
 		$(changeColor).css({'color':'#4169e1'});
 	},100);}
     ,function(){
 		if(this.timer) clearTimeout(this.timer);
-		$(this).siblings('span').slideUp(100);
+		$(this).siblings('a').slideUp(100);
 		$(this).css({'color':'#8E2323'});
 	});
   // 给 window 对象绑定 scroll 事件
