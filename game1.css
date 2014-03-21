@@ -2523,7 +2523,7 @@ font-color:ff2d51;width:200px;height:290px;font-size:15px;font-family:fangzhengP
 
 
 .title {opacity:0.9;color:383b3d;font-size:60px;width:35%;margin-top:70px;margin-left:25px;font-family:Stencil Std;text-shadow: 0 2px 2px rgba(0, 0, 0, .5);}
-.contact{background-color:726a6b;font-size:15px;font-family:"Microsoft Yahei",StencilStd;width:1600px;position:relative;font-align:'center';margin-left:200px;width:850px;margin-top:100px;filter:alpha(opacity=50);color:white; -moz-opacity:0.50; opacity:0.4;}
+.contact{background-color:726a6b;font-size:15px;font-family:"Microsoft Yahei",StencilStd;width:1600px;position:relative;font-align:'center';margin-left:230px;width:850px;margin-top:100px;filter:alpha(opacity=50);color:white; -moz-opacity:0.50; opacity:0.4;}
 
 body{background-color:black;background-image:url('images/dummy.png');background-repeat:no-repeat;}
 
@@ -2628,7 +2628,7 @@ font-weight:bolder;font-family:fangzhengPaper;
 	height: 500px;
 	overflow: hidden;
 	
-	margin-left: 220px;
+	margin-left: 250px;
 margin-top: 130px;
 	margin-right: auto;
 	background-image: url('images/6.png');repeat:no-repeat;

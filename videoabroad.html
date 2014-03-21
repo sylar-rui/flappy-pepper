@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+
+<title>剪纸学---视频教程</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<link href="css/jplayer.pink.flag.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.inspector.js"></script>
+<script type="text/javascript">
+
+//<![CDATA
+$(document).ready(function(){
+
+	new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_1",
+		cssSelectorAncestor: "#jp_container_1"
+	}, [
+		{
+		
+			title:"国外创意视频欣赏",
+			artist:"",
+			m4v: "images/flower.m4v",
+			poster: "images/flower.png"
+		},
+		{
+			title:"Incredibles Teaser",
+			artist:"Pixar",
+			m4v: "http://www.jplayer.org/video/m4v/Incredibles_Teaser.m4v",
+			ogv: "http://www.jplayer.org/video/ogv/Incredibles_Teaser.ogv",
+			webmv: "http://www.jplayer.org/video/webm/Incredibles_Teaser.webm",
+			poster: "http://www.jplayer.org/video/poster/Incredibles_Teaser_640x272.png"
+		}
+	], {
+		swfPath: "js/Jplayer.swf",
+		supplied: "webmv, ogv, m4v"
+	});
+
+});
+//]]>
+</script>
+<script type="text/javascript">
+(function() {
+	var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+	s.type = 'text/javascript';
+	s.async = true;
+	s.src = 'js/video1.js';
+	t.parentNode.insertBefore(s, t);
+})();
+</script>
+</head>
+<body class="demo" onload="prettyPrint();">
+<div class="colorzone"><br>
+
+<div class="Menu">
+ <div class="inner">
+        <ul id ="nav">
+          <li><a href="index.html"  class="subNavBtn">首页</a></li>
+          <li><a href="" class="subNavBtn">剪纸·传统之美</a></li>
+          <li><a href="" class="subNavBtn">剪纸·赏</a></li>
+          <li><a href="剪纸学.html" id="s3" class="subNavBtn">剪纸·学</a></li>
+          <li><a href="#" id="s4" class="subNavBtn">剪纸·空间</a></li>
+          <li><a href="#" id="s5" class="subNavBtn">剪纸·更多</a></li>
+        </ul>
+ 			</div>
+ 		</div>
+<div id="container">
+
+	
+	
+	<div id="content_main">
+
+		
+		<section>
+
+		<div id="jp_container_1" class="jp-video jp-video-270p" style="margin:10px auto">
+			<div class="jp-type-playlist">
+				<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+				<div class="jp-gui">
+					<div class="jp-video-play">
+						<a href="javascript:;" class="jp-video-play-icon" tabindex="1">play</a>
+
+					</div>
+					<div class="jp-interface">
+						<div class="jp-progress">
+							<div class="jp-seek-bar">
+								<div class="jp-play-bar"></div>
+							</div>
+						</div>
+						<div class="jp-current-time"></div>
+						<div class="jp-duration"></div>
+
+						<div class="jp-title">
+							<ul>
+								<li></li>
+							</ul>
+						</div>
+						<div class="jp-controls-holder">
+							<ul class="jp-controls">
+								<li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
+
+								<li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+								<li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+								<li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
+								<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+								<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+								<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+
+								<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+							</ul>
+							<div class="jp-volume-bar">
+								<div class="jp-volume-bar-value"></div>
+							</div>
+							<ul class="jp-toggles">
+								<li><a href="javascript:;" class="jp-full-screen" tabindex="1" title="full screen">full screen</a></li>
+								<li><a href="javascript:;" class="jp-restore-screen" tabindex="1" title="restore screen">restore screen</a></li>
+
+								<li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li>
+								<li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>
+								<li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+								<li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<div class="jp-playlist">
+					<ul>
+						<!-- The method Playlist.displayPlaylist() uses this unordered list -->
+						<li></li>
+					</ul>
+				</div>
+				<div class="jp-no-solution">
+					<span>Update Required</span>
+
+					To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+				</div>
+			</div>
+		</div>
+
+		</section>
+	</div>
+	
+</div>
+<br>
+<div style="width:640px;margin:20px auto 20px auto; padding:20px 0 0 320px;overflow:hidden">
+<!-- JiaThis Button BEGIN -->
+<div id="jiathis_style_32x32">
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_renren"></a>
+	<a class="jiathis_button_kaixin001"></a>
+
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v2.jiathis.com/code/jia.js" charset="utf-8"></script>
+</div>
+
+</div>
+</div>
+</body>
+
+
+</html>

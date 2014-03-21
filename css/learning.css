@@ -25,6 +25,7 @@ body {
 	font-size: 12px;
 	background:#f20c00;
 
+
 	
 }
 h10,h11{font-family:fangzhengPaper;}
@@ -144,7 +145,7 @@ margin-left:-35px;
 
 
 .Menu {margin: 0 auto;
-	top: 540px;left:2px;
+	top: 560px;left:2px;
 	position: relative;
 	height:50px;;
 	z-index: 1000;
