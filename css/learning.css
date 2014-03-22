@@ -23,7 +23,7 @@ body {
 	font-family: "Corbel",fangzhengPaper, "Comic Sans MS", cursive, Helvetica, Arial, Verdana, sans-serif;
 	color: #999;
 	font-size: 12px;
-	background:#f20c00;
+	background:WHITE;
 
 
 	
@@ -36,8 +36,11 @@ h12, h13 {
 font-size:20px;
 	margin:0 0 15px 0;
 }
-
-
+.poetry{font-family: "Corbel",fangzhengPaper, "Comic Sans MS", cursive, Helvetica, Arial, Verdana, sans-serif;
+	font-weight: 150;
+font-size:20px;
+	margin:0 140px; 15px 0;color:#e9f1f6;z-index:100;}
+h12{color:#bacac6;}
 h1 {
 	font-size: 36px;
 	letter-spacing: -2px;
@@ -72,8 +75,8 @@ h1.title {
 }
 
 #nav li a {
-	color:  #8E2323;
-	font-size:20px;
+	color:  #75878a;
+	font-size:17px;
 	font-style: bolder;
 	letter-spacing:0.5px;
 	width:160px;
@@ -97,7 +100,7 @@ h1.title {
 		
 		
 }
-
+.fonts{float:left;height:550px;width:1140px;font-size:40px;color:white;font-family:specialFont,fangzhengPaper;opacity:0.6;background:#bbcdc5;margin-top:30px;margin-left:-90px;z-index:1;}
 .inner h2{margin-top:380px;
 margin-left:-30px;
 	font-family: fangzhengpaper;
@@ -147,12 +150,12 @@ margin-left:-35px;
 .Menu {margin: 0 auto;
 	top: 560px;left:2px;
 	position: relative;
-	height:50px;;
+	height:40px;;
 	z-index: 1000;
 	width: 100%;
 	
 	width: 1600px;
-	background: rgba(175, 55, 55, 0.7);
+	background: rgba(187,205,197,0.7);
 	color: rgb(215, 215, 215);
 	width: 100%;
 }
@@ -210,33 +213,35 @@ top:10px;
 	background:white;background-opacity:0.9;
 	background-size: 100%;
 	background-position: 50%;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;position:relative;
 }
 
 
 .s3 {
-	min-height: 600px;
-	background: #e3f4e9;
+	min-height: 580px;
+	background: #e0f0e9;
 	background-size: 100%;
 	background-position: -50%;
-background-repeat: repeat-x;
+background-repeat: repeat-x;position:relative;top:10px;
 
 }
 
 
 .s4 {
-	min-height: 600px;
+	min-height: 580px;
 	background: url('../images/bg/bg4.jpg');
-	color: white;
+	color: white;position:relative;top:10px;
 }
 
 .s5 {
-	min-height: 600px;
-	background: url('../images/剪纸学/s5.png');
+	min-height: 580px;
+	background: url('../images/蝶！.png');
 	color: white;
 background-size: 100%;
 background-repeat: no-repeat;
 }
+.butterfly{position:absolute;height:300px;top:300px;z-index:-1;}
+.font5{font-family:fangzhengPaper;position:absolute;top:330px;left:260px;font-size:80px;z-index:1;}
 
 .one {
 	width:100%;
@@ -260,18 +265,17 @@ background-repeat: no-repeat;
 /*--------------------------- Content --------------------------*/
 
 /* Slicebox Style */
-.sb-slider{ background:white;width:400px;height：550px;);
-	margin:20px 500px auto;
-	position:relative;z-index: 10;
-
--webkit-perspective: 1200px;}
+.sb-slider{ 
+	margin:0 470px auto;
+	position:relative;
+}
 .sb-slider img{);
 	
 }
 .sb-nav span{
 	width:42px;
 	height:42px;
-	background:#28241f url(../images/nav.png) no-repeat top left;
+	background:#f0f0f4 url(../images/nav.png) no-repeat top left;
 	position:absolute;
 	top:50%;
 	left:-50px;

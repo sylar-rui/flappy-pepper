@@ -74,7 +74,7 @@
 		speed3d				: 800,		// animation speed3d.
 		speed				: 600,		// fallback speed. You might want to set a different speed for the fallback animation...
 		fallbackEasing		: 'easeOutExpo', // fallback easing.
-		slideshow			: false,	// if true the box will be rotating automatically.
+		slideshow			: true,	// if true the box will be rotating automatically.
 		slideshowTime		: 2000		// interval for the slideshow in ms.
     };
 	
