@@ -1,5 +1,6 @@
 ﻿$(function(){
 	$('.Menu').smint();
+  $(window).stellar();
 	$('#nav li').children('a').hover(function(){
 		$(this).siblings('a').slideDown(100);
 		var changeColor = this;
