@@ -1,6 +1,6 @@
 body {
 	font-family: Helvetica, Arial, Verdana;
-	background: #efefef url('../images/ticks.png') repeat 0 0;
+	background: #efefef url('../images/π˙Õ‚ºÙ÷Ω/4.png') repeat 0 0;
 	margin:15px 0 0 0;
 	font-size:12px;
 }
@@ -63,7 +63,7 @@ body {
 		display: block;
 		padding:5px 20px;		
 		text-decoration:none;
-		color:#666;
+		color:white;
 		cursor: pointer;
 	}
 	
@@ -198,3 +198,4 @@ body {
   width: 0;
   height: 0;
 }
+.ti{margin-right:20px;position:absolute;}

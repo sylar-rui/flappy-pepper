@@ -261,7 +261,7 @@ background-repeat: no-repeat;
 .flash image{minwidth:200px;}
 .font{float:right;}
 .font1{float:left;}
-.font2{float:left;margin-left:100px;margin-right:100px;text-align:middle;font-size:100px;font-weight:200;font-family:fangzhengPaper;}
+.font2{float:left;margin-left:60px;margin-right:100px;text-align:middle;font-size:140px;font-weight:200;font-family:fangzhengPaper;}
 /*--------------------------- Content --------------------------*/
 
 /* Slicebox Style */

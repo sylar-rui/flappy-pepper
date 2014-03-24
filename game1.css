@@ -2574,7 +2574,7 @@ font-weight:bolder;font-family:fangzhengPaper;
 
 
 .Menu {margin: 0 auto;
-	top: 60px;left:2px;
+	top: 60px;left:-2px;
 	position: relative;
 	height:40px;;
 	z-index: 1000;
